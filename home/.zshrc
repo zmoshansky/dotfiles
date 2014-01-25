@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-DEFAULT_USER="work-mbh"
+DEFAULT_USER="zach"
 #ZSH_THEME="amuse"
 
 # Example aliases
