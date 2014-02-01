@@ -1,13 +1,11 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-DEFAULT_USER="zach"
 #ZSH_THEME="amuse"
+
+DEFAULT_USER=$USER
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -31,8 +29,7 @@ DEFAULT_USER="zach"
 # Uncomment following line if you want to disable command autocorrection
 # DISABLE_CORRECTION="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
- COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment following line if you want to disable marking untracked files under
 # VCS as dirty. This makes repository status check for large repositories much,
@@ -42,7 +39,7 @@ DEFAULT_USER="zach"
 # Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="mm/dd/yyyy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -53,7 +50,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-eabi-4_7-2013q2/bin:$PATH
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -73,9 +71,6 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
-
-#Path
-PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-eabi-4_7-2013q2/bin
 
 # Source zsh_aliases
 if [ -f ~/.zsh_aliases ]; then
