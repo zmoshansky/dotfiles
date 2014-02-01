@@ -51,20 +51,25 @@ plugins=(git)
 #   export EDITOR='mvim'
 # fi
 
+
+## SOURCES
+
 # Oh My ZSH
-source $ZSH/oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+		source $ZSH/oh-my-zsh.sh
+fi
 
 # Powerline fonts
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
 
-# Source zsh_aliases
+# zsh_aliases
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
 
-# Source RVM Scripts
+# RVM Scripts
 if [ -f /usr/local/rvm/scripts/rvm ]; then
     source /usr/local/rvm/scripts/rvm
 fi
