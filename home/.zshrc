@@ -39,7 +39,7 @@ DEFAULT_USER="zach"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -77,4 +77,12 @@ fi
 #Path
 PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-eabi-4_7-2013q2/bin
 
-export PATH
+# Source zsh_aliases
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
+
+# Source RVM Scripts
+if [ -f /usr/local/rvm/scripts/rvm ]; then
+    source /usr/local/rvm/scripts/rvm
+fi

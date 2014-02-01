@@ -1,0 +1,3 @@
+# Aliases for Rails
+alias rake="noglob rake"
+alias cap="noglob cap"
