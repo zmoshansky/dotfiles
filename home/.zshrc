@@ -7,10 +7,6 @@ ZSH_THEME="agnoster"
 
 DEFAULT_USER=$USER
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
@@ -46,12 +42,6 @@ HIST_STAMPS="mm/dd/yyyy"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-export PATH=$HOME/bin:/usr/local/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-eabi-4_7-2013q2/bin:$PATH
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -61,11 +51,8 @@ export PATH=$HOME/bin:/usr/local/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-ea
 #   export EDITOR='mvim'
 # fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# Oh My ZSH
+source $ZSH/oh-my-zsh.sh
 
 # Powerline fonts
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
@@ -81,3 +68,4 @@ fi
 if [ -f /usr/local/rvm/scripts/rvm ]; then
     source /usr/local/rvm/scripts/rvm
 fi
+
