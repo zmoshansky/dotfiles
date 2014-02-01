@@ -73,3 +73,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
+
+#Path
+PATH=$PATH:$HOME/.local/bin:$HOME/bin:/usr/share/devTools/gcc_arm/gcc-arm-none-eabi-4_7-2013q2/bin
+
+export PATH
