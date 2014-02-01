@@ -39,7 +39,7 @@ DEFAULT_USER="work-mbh"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Uncomment following line if you want to  shown in the command execution time stamp 
+# Uncomment following line if you want to  shown in the command execution time stamp
 # in the history command output. The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|
 # yyyy-mm-dd
 # HIST_STAMPS="mm/dd/yyyy"
@@ -73,3 +73,14 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 if [[ -r /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ]]; then
     source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
 fi
+
+# Source zsh_aliases
+if [ -f ~/.zsh_aliases ]; then
+    source ~/.zsh_aliases
+fi
+
+# Source RVM Scripts
+if [ -f /usr/local/rvm/scripts/rvm ]; then
+    source /usr/local/rvm/scripts/rvm
+fi
+
