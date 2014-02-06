@@ -68,6 +68,10 @@ fi
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
+# zsh_aliases
+if [ -f ~/.zsh_exports ]; then
+    source ~/.zsh_exports
+fi
 
 # RVM Scripts
 if [ -f /usr/local/rvm/scripts/rvm ]; then
