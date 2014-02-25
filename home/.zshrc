@@ -77,4 +77,3 @@ fi
 if [ -f /usr/local/rvm/scripts/rvm ]; then
     source /usr/local/rvm/scripts/rvm
 fi
-
