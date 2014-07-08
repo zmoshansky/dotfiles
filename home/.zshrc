@@ -56,7 +56,7 @@ plugins=(git)
 
 # Oh My ZSH
 if [ -f $ZSH/oh-my-zsh.sh ]; then
-		source $ZSH/oh-my-zsh.sh
+    source $ZSH/oh-my-zsh.sh
 fi
 
 # Powerline fonts
@@ -68,12 +68,13 @@ fi
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
-# zsh_aliases
+
+# zsh_exports
 if [ -f ~/.zsh_exports ]; then
     source ~/.zsh_exports
 fi
 
 # OPAM configuration
 if [ -f /home/zach/opam ]; then
-. /home/zach/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+    . /home/zach/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 fi
