@@ -73,7 +73,7 @@ if [ -f ~/.zsh_exports ]; then
     source ~/.zsh_exports
 fi
 
-# RVM Scripts
-if [ -f /usr/local/rvm/scripts/rvm ]; then
-    source /usr/local/rvm/scripts/rvm
+# OPAM configuration
+if [ -f /home/zach/opam ]; then
+. /home/zach/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 fi
