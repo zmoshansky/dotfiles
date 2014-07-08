@@ -56,7 +56,7 @@ plugins=(git)
 
 # Oh My ZSH
 if [ -f $ZSH/oh-my-zsh.sh ]; then
-		source $ZSH/oh-my-zsh.sh
+    source $ZSH/oh-my-zsh.sh
 fi
 
 # Powerline fonts
@@ -68,12 +68,9 @@ fi
 if [ -f ~/.zsh_aliases ]; then
     source ~/.zsh_aliases
 fi
-# zsh_aliases
+
+# zsh_exports
 if [ -f ~/.zsh_exports ]; then
     source ~/.zsh_exports
 fi
 
-# RVM Scripts
-if [ -f /usr/local/rvm/scripts/rvm ]; then
-    source /usr/local/rvm/scripts/rvm
-fi
