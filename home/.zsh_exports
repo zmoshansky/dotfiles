@@ -7,4 +7,36 @@
 #   export EDITOR='mvim'
 # fi
 
+# Ruby
 export GEM_EDITOR='subl'
+
+# A15
+###############################
+
+# Rust
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/lib
+
+# Rust Src
+if [ -d ~/git/rust/rust ]; then
+    export RUST_SRC_PATH=~/git/rust/rust/src/
+fi
+
+# Rust Racer - Autocomplete
+if [ -f ~/git/rust/racer/bin/racer ]; then
+    export PATH=${PATH}:/home/zach/git/rust/racer/bin
+fi
+
+# gcc-arm
+if [ -d /opt/gcc-arm-none-eabi-4_8-2014q3 ]; then
+    export PATH=${PATH}:/opt/gcc-arm-none-eabi-4_8-2014q3/bin
+fi
+
+# npm
+if [ -d ~/.npm-global ]; then
+    export PATH=~/.npm-global/bin:$PATH
+fi
+
+# android studio
+if [ -d /opt/android/Sdk ]; then
+    export ANDROID_HOME=/opt/android/Sdk
+fi

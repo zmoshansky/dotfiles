@@ -67,6 +67,6 @@ if [ -f ~/.zsh_exports ]; then
 fi
 
 # OPAM configuration
-if [ -f /home/zach/opam ]; then
-    . /home/zach/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+if [ -f ~/opam ]; then
+    . ~/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 fi

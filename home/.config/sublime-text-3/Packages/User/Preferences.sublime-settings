@@ -1,6 +1,6 @@
 {
-	"color_scheme": "Packages/RailsCasts Colour Scheme/RailsCastsColorScheme.tmTheme",
-	"font_size": 13,
+	"color_scheme": "Packages/User/SublimeLinter/RailsCastsColorScheme (SL).tmTheme",
+	"font_size": 10,
 	"ignored_packages":
 	[
 		"Vintage"

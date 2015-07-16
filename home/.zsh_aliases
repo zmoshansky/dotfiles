@@ -2,6 +2,5 @@
 alias rake="noglob rake"
 alias cap="noglob cap"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Convenience Aliases
+alias la="ls -la"
